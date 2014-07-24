@@ -34,6 +34,7 @@ class aide {
     mode   => '0600',
     source => 'puppet:///modules/aide/aide.conf',
   }
+  #RHEL-06-000302, RHEL-06-000303, RHEL-06-000304, RHEL-06-000305, RHEL-06-000306, RHEL-06-000307
   file { '/etc/cron.daily/aide':
     owner  => 'root',
     group  => 'root',
