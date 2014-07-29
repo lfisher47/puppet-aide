@@ -51,10 +51,6 @@ class aide {
   }
 
   exec { 'Turn off Prelinking':
-    # This will create the initial AIDE database if it doesn't already exist
-    #'Initialize AIDE DB':
-    #  command => '/usr/sbin/aide -i; /bin/cp /var/lib/aide/aide.db.new.gz /var/lib/aide/aide.db.gz',
-    #  onlyif  => '/usr/bin/test ! -f /var/lib/aide/aide.db.gz';
     command => '/usr/sbin/prelink -ua; /bin/rm /etc/prelink.cache',
     onlyif  => '/usr/bin/test -e /etc/prelink.cache',
   }

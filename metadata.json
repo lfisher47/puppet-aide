@@ -1,6 +1,6 @@
 {
   "name": "lfisher47-aide",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "author": "lfisher47",
   "summary": "Aide STIG rule enforement",
   "license": "GNU GPL 2.0",
@@ -11,7 +11,12 @@
     {
       "operatingsystem": "RedHat",
       "operatingsystemrelease": [
-        "5",
+        "6"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
         "6"
       ]
     }
